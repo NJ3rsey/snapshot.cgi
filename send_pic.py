@@ -11,7 +11,7 @@ def send():
         }
 
     message = ('https://api.telegram.org/bot' + bot_token + '/sendPhoto?chat_id=' + chat_id)
-    send = requests.post(message, files = files)
+    upload = requests.post(message, files = files)
     
-send();
+send()
 
